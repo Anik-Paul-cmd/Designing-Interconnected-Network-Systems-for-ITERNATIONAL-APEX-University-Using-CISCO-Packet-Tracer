@@ -57,7 +57,7 @@ Implementation and Functionality:
 #ip helper-addresss (DHCP IP)
 DHCP server provides IP addresses and also default gateway and DNS server IP addresse.IP address of DHCP is configure statically cause if IP changes dynamically other host wont be able to find the server.  
 
-![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/50ee2196-0535-417d-b89c-b0bb169f4fa2)
+
 
 •	HTTP & DNS Server: HTTP server is used to host the webpages. Here we have import our university webpages to the HTTP server. DNS server is used convert the domain name to equivalent IP address. To use domain name we have to know DNS server IP address. So IP of DNS fixed statically. Here we used a one server to provide HTTP and DNS service. The IP of this server is distributed by DHCP server.
 ![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/6b603a70-6736-4049-94fb-ef20e3aaff2e)
