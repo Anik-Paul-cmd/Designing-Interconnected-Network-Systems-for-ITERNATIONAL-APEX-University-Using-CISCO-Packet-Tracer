@@ -33,7 +33,11 @@ The network that we designed maintaining those several criteria looks like this.
 Implementation and Functionality:
 •	Network and Subnetwork: we used class B type IP address, that is 160.15.0.0 and we used 4 bit for subnet so subnet mask is 255.255.240.0 So each subnet can have 212 hosts. First subnet of network is 160.15.16.0 where all the servers are connected.
 •	Personal Computers: Each personal computer is connected to a switch. Each computer needs a IP address which is provided automatically by the DHCP Server. Using HTTP and DNS server we can browse in university website.
+
+
 <img width="282" alt="image" src="https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/eca4cab3-5f71-40db-9b77-99e6ac81722c">
+
+
 <img width="408" alt="image" src="https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/56ebd18c-3aeb-47a4-9681-6de390130a87">
 
 •	Laptops: Laptops and wireless device are for students and which are connected by the wireless router and IP addresses are distributed by that wireless router.
