@@ -1,6 +1,6 @@
 # Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer
 
- <strong>Introduction: <strong>
+ <strong>Introduction: </strong>
 
 Technology has reached its highest peak of development, especially in making life easier for people. Well implemented technology is faster than human in processing calculation and is more accurate. Technology has become an important concept in our life. It assists in connecting communities together. Obviously, people have started to use technology in every field of life including education, health, the military, etc. The computer network represents a component, especially on how it enhances the functional performance in different fields and organizations. Most of the university’s computer network perform so many functions, such as connecting students with the university, faculty, lab, library and the many other controls. For this reason, computer networks play a vital role in the education area by providing efficient communications for the university environment. However, the design of computer networks differs from one university to another. This is as a result of many factors which determine the differences. 
 In our project, our task is to create a complete model of the complex network by discovering the interconnectivity of the systems and sub networks, which will reflect the ITERNATIONAL APEX University’s structure and facilities. We have used CISCO Packet Tracer as a simulation tool in our project.
