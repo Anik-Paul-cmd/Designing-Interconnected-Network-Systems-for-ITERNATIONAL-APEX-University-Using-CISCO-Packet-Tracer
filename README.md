@@ -41,7 +41,12 @@ Implementation and Functionality:
 <img width="408" alt="image" src="https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/56ebd18c-3aeb-47a4-9681-6de390130a87">
 
 •	Laptops: Laptops and wireless device are for students and which are connected by the wireless router and IP addresses are distributed by that wireless router.
+
+
 <img width="275" alt="image" src="https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/3be9c268-49ce-49d4-810f-71b29b3f4d6c">
+
+
+
 •	 Switches: Switches are devices used on the network to transmit and receive data from one device to another or to many devices depending on the message intended. Switches are connected to multiple host server or routers. Switches also perform functions from the Data Link Layer.
 •	Routers: Routers are connected to each subnets. We used 3 routers which are interconnected to each other, to expand the subnets routers are connected to switches. To configure routers there are two option CLI command and config to type and save all the necessary terms(IPs, tables, routes). We mostly used config option and few command which we cant configure in config. 
 ![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/1f0fed88-4957-49d1-b99c-3eef000c11b9)
