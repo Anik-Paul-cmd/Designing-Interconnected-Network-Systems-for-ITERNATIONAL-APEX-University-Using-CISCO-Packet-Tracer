@@ -1,14 +1,14 @@
 # Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer
 
- <strong>Introduction: </strong>
+## Introduction: 
 
 Technology has reached its highest peak of development, especially in making life easier for people. Well implemented technology is faster than human in processing calculation and is more accurate. Technology has become an important concept in our life. It assists in connecting communities together. Obviously, people have started to use technology in every field of life including education, health, the military, etc. The computer network represents a component, especially on how it enhances the functional performance in different fields and organizations. Most of the university’s computer network perform so many functions, such as connecting students with the university, faculty, lab, library and the many other controls. For this reason, computer networks play a vital role in the education area by providing efficient communications for the university environment. However, the design of computer networks differs from one university to another. This is as a result of many factors which determine the differences. 
 In our project, our task is to create a complete model of the complex network by discovering the interconnectivity of the systems and sub networks, which will reflect the ITERNATIONAL APEX University’s structure and facilities. We have used CISCO Packet Tracer as a simulation tool in our project.
 
-Objectives:
+## Objectives:
 The main goal of this project is to present a Local Area Network model design suitable for a University by discovering the interconnectivity of the systems and sub-networks. Many universities are searching for ways to integrate networks that have security, backup, and other features available in a university network. The universities are faced with challenges in designing a network that is equal in the standards used by developed countries. The main problem they face deals with a profound budget deficit. This project will help these universities to design a network that employs low-cost solutions without unacceptable compromises in security or quality.
 The qualities that reflects the characteristics of an effective and efficient University Network are
-1.	Capacity: This is the ability of the network to withstand intense pressure from utilization. Most times, the networks are mainly crowded by many users that the network capacity could not handle. It is very important to design a network in such a way to handle many users without failure. This network is designed for as a sample so that it can be increased as needed later on. If more users access the network, it will be able to scale.
+1.	**Capacity: This is the ability of the network to withstand intense pressure from utilization. Most times, the networks are mainly crowded by many users that the network capacity could not handle. It is very important to design a network in such a way to handle many users without failure. This network is designed for as a sample so that it can be increased as needed later on. If more users access the network, it will be able to scale.
 
 2.	Reliability: Reliability refers to the ability of the computer network’s hardware and software component to consistently perform according to its specifications. This project’s network will be highly reliable in performance because its components will be chosen from Cisco company, a major and well-regarded manufacturer. This is because there are many powerful devices are used in filtering data entering into the network. If any issue happens to the data, there is a way of restoring the data from backup servers. 
 
@@ -23,14 +23,14 @@ Component for This Project:
 7.	Router
 8.	Wireless Router 
 
-Connection Setup:
+## Connection Setup:
 The network is divided into subnets and all the subnets are connected through router and all routers are interconnected to each other. All the servers are in specific subnets. Each classroom lab, library, employee’s pc, staff’s pc has own subnets. All the IP of pc are provided through one DHCP server. The figure below shows the connection setup of all devices.
 
-Design of the Network:
+## Design of the Network:
 ![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/6fdc461c-1d88-4e47-89e1-50941c606997)
 The network that we designed maintaining those several criteria looks like this. There is are routers through which the other sub-networks are connected like server, classroom, Labs, Library, Employee and other administrative and academic wings. On top of that university runs a number of complex networked systems to support several business processes like admissions, results, eTender, advising and so on. For simplicity only 5 host has been taken in each of the subnets and 1 host with server for test. If more hosts are needed that can also be concluded with the existing system by switches. There is also a Access point wireless to provide Wi-Fi connection to the students of the university.
 
-Implementation and Functionality:
+## Implementation and Functionality:
 •	Network and Subnetwork: we used class B type IP address, that is 160.15.0.0 and we used 4 bit for subnet so subnet mask is 255.255.240.0 So each subnet can have 212 hosts. First subnet of network is 160.15.16.0 where all the servers are connected.
 •	Personal Computers: Each personal computer is connected to a switch. Each computer needs a IP address which is provided automatically by the DHCP Server. Using HTTP and DNS server we can browse in university website.
 
@@ -63,7 +63,7 @@ DHCP server provides IP addresses and also default gateway and DNS server IP add
 ![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/6b603a70-6736-4049-94fb-ef20e3aaff2e)
 ![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/2aaa6316-ea13-4901-93af-1e662b42347c)
 
-Conclusion:
+## Conclusion:
 This project has proven that a standard network system can be designed with less cost. Although we used the cheapest devices in designing the network. All networks need many servers for doing their work. For this project we did not use all servers because of cost, but we used some important servers such as DNS and DHCP. These servers help the network to perform their functions in a smooth way.  It can be seen in this project that various costs were minimized in order to maximize the quality of the designed network. Although there may have been some challenges in this project due to some constraints, at the end our aim was achieved by designing a network for ACCORD University.
 
 
