@@ -51,6 +51,24 @@ Implementation and Functionality:
 •	Routers: Routers are connected to each subnets. We used 3 routers which are interconnected to each other, to expand the subnets routers are connected to switches. To configure routers there are two option CLI command and config to type and save all the necessary terms(IPs, tables, routes). We mostly used config option and few command which we cant configure in config. 
 ![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/1f0fed88-4957-49d1-b99c-3eef000c11b9)
 •	Wireless Routers: This is use to provide wireless network. Which is connected to a subnet by switch. Internet is configured by DHCP and LAN is configured statics. This LAN provide wireless devises a unique subnets IP address. 
+![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/938c547b-806b-489f-a331-20bfc9249c5e)
+
+•	DHCP Server: Dynamic Host Configuration Protocol (DHCP) server is connected to first subnet. This server is used to provide IP address to all other subnet’s host’s. To provide IP address in same subnet we can configure server in config by typing all necessary IPs. To distribute IP to other subnet a command is required. This allow to use other subnet DHCP server.
+#ip helper-addresss (DHCP IP)
+DHCP server provides IP addresses and also default gateway and DNS server IP addresse.IP address of DHCP is configure statically cause if IP changes dynamically other host wont be able to find the server.  
+
+![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/50ee2196-0535-417d-b89c-b0bb169f4fa2)
+
+•	HTTP & DNS Server: HTTP server is used to host the webpages. Here we have import our university webpages to the HTTP server. DNS server is used convert the domain name to equivalent IP address. To use domain name we have to know DNS server IP address. So IP of DNS fixed statically. Here we used a one server to provide HTTP and DNS service. The IP of this server is distributed by DHCP server.
+![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/6b603a70-6736-4049-94fb-ef20e3aaff2e)
+![image](https://github.com/Anik-Paul-cmd/Designing-Interconnected-Network-Systems-for-ITERNATIONAL-APEX-University-Using-CISCO-Packet-Tracer/assets/57853726/2aaa6316-ea13-4901-93af-1e662b42347c)
+
+Conclusion:
+This project has proven that a standard network system can be designed with less cost. Although we used the cheapest devices in designing the network. All networks need many servers for doing their work. For this project we did not use all servers because of cost, but we used some important servers such as DNS and DHCP. These servers help the network to perform their functions in a smooth way.  It can be seen in this project that various costs were minimized in order to maximize the quality of the designed network. Although there may have been some challenges in this project due to some constraints, at the end our aim was achieved by designing a network for ACCORD University.
+
+
+
+
 
 
 
