@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <title>Home page</title>          
+    <script src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="basic.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="slideshow.css">
+    <link rel="stylesheet" type="text/css" href="section_home.css">
+    <link rel="stylesheet" type="text/css" href="modal_home.css">
+    <link rel="stylesheet" type="text/css" href="pool.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <h1><a href="index.html">Apex University <a></h1>
+
+        </div>
+        <nav >
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+          <div id="id01" class="modal">
+            
+            <form class="modal-content animate" action="login.php" method="POST">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img  src="avatar.png" alt="Avatar" class="avatar"  >
+              </div>
+
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit">Login</button>
+
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1">
+                
+              </div>
+            </form>
+          </div>
+
+            </form>
+          </div>
+    </header>
+
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+                    <script>
+          // Get the modal
+          var modal = document.getElementById('id02');
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+
+
+    <section id="showcase">
+      <div class="container ">
+        <div align="center" >
+          
+          <a href="student.html"><button class="nav" name="type" type="submit" value="fav_HTML" >Student</button></a>
+          <a href="faculty.html"><button class="nav">Faculty</button></a>
+          <a href="admin.html"><button class="nav">Admin</button></a>        
+          <a href="alumni.html"><button class="nav" name="type" type="submit" value="fav_HTML" >Alumni</button></a>
+          <div class="slideshow-container">
+       
+            <div class="mySlides fade">
+              <img class="z" src="pic1.jpg" style="width:100%">
+            </div>       
+            <div class="mySlides fade">
+              <img class="z" src="pic2.jpg" style="width:100%">
+            </div>       
+            <div class="mySlides fade">
+              <img class="z" src="pic3.jpg" style="width:100%">
+            </div>       
+            <div class="mySlides fade">
+              <img class="z" src="pic4.jpg" style="width:100%">
+            </div>
+
+
+
+
+            
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+
+
+          <div style="text-align:center" class="t">
+            <?php 
+
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+
+            
+          </div>
+        </div>
+      </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusSlides(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block"; 
+              setTimeout(5000)  
+            }
+
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000); // Change image every 2 seconds
+            }
+        </script>
+    </section>
+
+
+
+
+
+    <section  class="container bodycont"  >
+
+      <div id="ibuttom_container" align="left">
+
+        <button class="ibuttom" id='all'onclick="openCity(event, 'All')">Academic</button>
+        <button class="ibuttom" onclick="openCity(event, 'Now')">Admission</button>
+        <button class="ibuttom" onclick="openCity(event, 'Up')">Library</button>
+        <button class="ibuttom" onclick="openCity(event, 'Sp')">Result</button>  
+
+
+        <div id="All" class="ibuttomcontent" >
+
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="acadmic.html">
+                        <img src="1.png">
+                        </a>
+                         <div class="desc smalltext" >Department of science and Engineering</div>
+                      </div>
+                  </div>
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="acadmic.html">
+                        <img src="3.png">
+                        </a>
+                         <div class="desc smalltext" >Department of Liberal art and coscial science</div>
+                      </div>
+                  </div>
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="acadmic.html">
+                        <img src="2.png">
+                        </a>
+                         <div class="desc smalltext" >Department of business and economics</div>
+                      </div>
+                  </div>
+  
+ 
+    <a href="acadmic.html"> <i class="right"></i></a>
+  
+        </div>
+
+
+
+        <div id="Now" class="ibuttomcontent">
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="admission.html">
+                        <img src="4.png">
+                        </a>
+                         <div class="desc smalltext" >Undergraduate</div>
+                      </div>
+                  </div>
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="admission.html">
+                        <img src="5.png">
+                        </a>
+                         <div class="desc smalltext" >Graduate</div>
+                      </div>
+                  </div>
+
+
+      <a href="admission.html"> <i class="right"></i></a>        
+    </div>
+        
+
+        <div id="Up" class="ibuttomcontent">
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="library.html">
+                        <img src="6.png">
+                        </a>
+                         <div class="desc smalltext" >books1</div>
+                      </div>
+                  </div>
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="library.html">
+                        <img src="7.png">
+                        </a>
+                         <div class="desc smalltext" >books2</div>
+                      </div>
+                  </div>
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="library.html">
+                        <img src="8.png">
+                        </a>
+                         <div class="desc smalltext" >books3</div>
+                      </div>
+                  </div>
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="library.html">
+                        <img src="9.png">
+                        </a>
+                         <div class="desc smalltext" >books4</div>
+                      </div>
+                  </div>
+      <a href="library.html"> <i class="right"></i></a>        
+        </div>
+
+        <div id="Sp" class="ibuttomcontent">
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="results.html">
+                        <img src="10.png">
+                        </a>
+                         <div class="desc smalltext" >Amission</div>
+                      </div>
+                  </div>
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="results.html">
+                        <img src="4.png">
+                        </a>
+                         <div class="desc smalltext" >undergraduates</div>
+                      </div>
+                  </div>
+              <div class="boxes">
+                     <div class="gallery">
+                        <a href="results.html">
+                        <img src="5.png">
+                        </a>
+                         <div class="desc smalltext" >Graduates</div>
+                      </div>
+                  </div>
+      <a href="results.html"> <i class="right"></i></a>        
+        </div>
+
+      <div class="ibuttom_container news" align="left">
+        <button class="ibuttom noHover">News</button>
+        <button class="ibuttomnews noHover"> b</button>
+        <a href="news_list.html"><button class="ibuttom">more</button></a>
+
+
+          <div class="hotnews">
+            <span class="bold "> Happy victory day</span>
+            <div class="smalltext">date : dd.mm.yyyy></div>
+            <div class="newsdiscropp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+
+</div>
+            <a href="news_list.html" class="see">see more</a>
+
+          </div>
+
+
+          <div class="morenews">
+
+                <div class="fewnews bold">Phasellus viverra nulla ut metus varius laoreet<div class="smalltext">date : dd.mm.yyyyy</div><a href="news_list.html" class="see">see more</a> </div>
+                <div class="fewnews bold">Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus <div class="smalltext">date : dd.mm.yyyyy</div><a href="news_list.html" class="see">see more</a> </div>
+                <div class="fewnews bold">us varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<div class="smalltext">date : dd.mm.yyyyy</div><a href="news_list.html?>" class="see">see more</a> </div>
+                <div class="fewnews bold">us. Donec quam felis, ultricies nec, pellentesque e<div class="smalltext">date : dd.mm.yyyyy</div><a href="news_list.html" class="see">see more</a> </div>
+          
+
+
+
+            </div>
+        </div>
+      <script>
+
+          document.getElementById("all").click();    //auto click
+
+          //content cahnge
+          function openCity(evt, cityName)
+          {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("ibuttomcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("ibuttom");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" now", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " now";
+        }
+
+
+          // Add active class to the current button (highlight it)
+          var header = document.getElementById("ibuttom_container");
+          var btns = header.getElementsByClassName("ibuttom");
+          for (var i = 0; i < btns.length; i++) 
+          {
+            btns[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("this");
+              current[0].className = current[0].className.replace(" this", "");
+              this.className += " this";
+            });
+          }
+      </script>
+
+      </div>
+
+      <div class="right_container">
+
+        
+        <div class="right_sec">
+          <div class="reight_sec_container_header">Notice</div>
+
+            <div class="right_container_of_text">University will remain close at 16th December </div>
+   
+
+        </div>
+                
+        <div class="right_sec">
+          <div class="reight_sec_container_header">Our Achivements</div>
+
+            <div class="right_container_of_text">utate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, b</div>
+   
+
+        </div>                
+        <div class="right_sec">
+          <div class="reight_sec_container_header">Events</div>
+
+            <div class="right_container_of_text">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</div>
+   
+
+        </div>       
+         <div class="right_sec">
+          <div class="reight_sec_container_header">Clubs</div>
+
+            <div class="right_container_of_text">sellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condi</div>
+   
+
+        </div>
+        
+     
+
+          <script>
+
+            $(document).ready(function() {
+                 $("#R1_button").click(function(){
+                   // alert("asd");
+
+                    var op = document.querySelector('.check_list:checked').value;
+                    var id = "<?php echo $R1id ?>";
+                    if(op) 
+                    {
+                      $("#R1_inside").empty(); 
+                      //alert("asd");
+                      $.ajax({
+                                url: "poll_ajax.php", 
+                                dataType: 'Json',
+                                data: {'pid':id,'vote':op},
+                                  success: function(data)
+                                            {  
+                                            $.each(data, function(key, value) {
+                                              $("#R1_inside").append('<label class="smalltext">'+key+' </label></br><img src ="image/poll.png"  class ="right_container_of_text" width="'+value+'%" height = "5"></br>');  
+
+                                            });
+                                            }
+                              });
+                    }
+    }); 
+});  
+                  $(document).ready(function() {
+                 $("#R2_button").click(function(){
+                   // alert("asd");
+
+                    var op = document.querySelector('.check_list:checked').value;
+                    var id = "<?php echo $R2id ?>";
+                    if(op) 
+                    {
+                      $("#R2_inside").empty(); 
+                      //alert("asd");
+                      $.ajax({
+                                url: "poll_ajax.php", 
+                                dataType: 'Json',
+                                data: {'pid':id,'vote':op},
+                                  success: function(data)
+                                            {  
+                                            $.each(data, function(key, value) {
+                                              $("#R2_inside").append('<label class="smalltext" >'+key+' </label></br><img src ="image/poll.png"  class ="right_container_of_text" width="'+value+'%" height = "5"></br>');  
+
+                                            });
+                                            }
+                              });
+                    }
+    }); 
+});
+
+          </script>
+       </div>
+
+     </div>
+
+  </section>
+    <footer>
+    
+  
+      <p id="footer">
+        Scorpix Movie Hall , copyright &copy 
+      </p>
+    </footer>        
+  </body>
+</html>
